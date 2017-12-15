@@ -1,4 +1,4 @@
-# **************************************************************************** #
+#**************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
@@ -6,7 +6,7 @@
 #    By: snikitin <snikitin@student.unit.ua>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/10/29 20:52:13 by snikitin          #+#    #+#              #
-#    Updated: 2017/11/08 14:14:17 by snikitin         ###   ########.fr        #
+#    Updated: 2017/12/15 15:12:42 by snikitin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,9 +32,10 @@ SRCS = $(SRC_DIR)/ft_memset.c $(SRC_DIR)/ft_bzero.c $(SRC_DIR)/ft_memcpy.c \
 	   $(SRC_DIR)/ft_strtrim.c $(SRC_DIR)/ft_strsplit.c\
 	   $(SRC_DIR)/ft_itoa.c $(SRC_DIR)/ft_lstnew.c $(SRC_DIR)/ft_lstdelone.c\
 	   $(SRC_DIR)/ft_lstdel.c $(SRC_DIR)/ft_lstadd.c $(SRC_DIR)/ft_lstiter.c\
-	   $(SRC_DIR)/ft_lstmap.c $(SRC_DIR)ft_list_push_back.c\
-	   $(SRC_DIR)ft_list_push_front.c $(SRC_DIR)ft_list_at.c\
-	   $(SRC_DIR)ft_list_find.c $(SRC_DIR)ft_list_last.c
+	   $(SRC_DIR)/ft_lstmap.c $(SRC_DIR)/ft_list_push_back.c\
+	   $(SRC_DIR)/ft_list_push_front.c $(SRC_DIR)/ft_list_at.c\
+	   $(SRC_DIR)/ft_list_find.c $(SRC_DIR)/ft_list_last.c\
+	   $(SRC_DIR)/get_next_line.c
 
 OBJ = ft_memset.o ft_bzero.o ft_memcpy.o ft_memccpy.o ft_memmove.o ft_memchr.o \
 	  ft_memcmp.o ft_isalpha.o ft_isdigit.o ft_isalnum.o\
@@ -48,7 +49,8 @@ OBJ = ft_memset.o ft_bzero.o ft_memcpy.o ft_memccpy.o ft_memmove.o ft_memchr.o \
 	  ft_strequ.o ft_strnequ.o ft_strsub.o ft_strjoin.o ft_strtrim.o\
 	  ft_strsplit.o ft_itoa.o ft_lstnew.o ft_lstdelone.o ft_lstdel.o\
 	  ft_lstadd.o ft_lstiter.o ft_lstmap.o ft_list_push_back.o\
-	  ft_list_push_front.o ft_list_at.o ft_list_find.o ft_list_last.o
+	  ft_list_push_front.o ft_list_at.o ft_list_find.o ft_list_last.o\
+	  get_next_line.o
 
 CC = gcc
 
@@ -259,3 +261,6 @@ ft_list_at.o : $(SRC_DIR)/ft_list_at.c
 
 ft_list_last.o : $(SRC_DIR)/ft_list_last.c
 	$(CC) $(CFLAGS) -c -o ft_list_last.o $(SRC_DIR)/ft_list_last.c
+	
+get_next_line.o : $(SRC_DIR)/get_next_line.c get_next_line.h
+	$(CC) $(CFLAGS) -c -o get_next_line.o $(SRC_DIR)/get_next_line.c
