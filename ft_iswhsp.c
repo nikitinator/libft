@@ -1,22 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl.c                                       :+:      :+:    :+:   */
+/*   ft_iswhsp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: snikitin <snikitin@student.unit.ua>        +#+  +:+       +#+        */
+/*   By: snikitin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/10/29 19:36:05 by snikitin          #+#    #+#             */
-/*   Updated: 2017/12/20 17:42:41 by snikitin         ###   ########.fr       */
+/*   Created: 2017/12/20 17:27:32 by snikitin          #+#    #+#             */
+/*   Updated: 2017/12/20 17:27:51 by snikitin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-void	ft_putendl(char const *s)
+int		ft_iswhsp(int c)
 {
-	if (s)
-	{
-		write(1, s, ft_strlen(s));
-		write(1, "\n", 1);
-	}
+	if (c == ' ' || c == '\t' || c == '\n' || c == '\r'
+			|| c == '\f' || c == '\v')
+		return (1);
+	return (0);
 }

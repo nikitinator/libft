@@ -6,7 +6,7 @@
 /*   By: snikitin <snikitin@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/29 19:33:18 by snikitin          #+#    #+#             */
-/*   Updated: 2017/11/04 19:10:30 by snikitin         ###   ########.fr       */
+/*   Updated: 2017/12/20 17:41:32 by snikitin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,5 +15,5 @@
 void	ft_putstr(char const *s)
 {
 	if (s)
-        write(1, s, ft_strlen(s));
+		write(1, s, ft_strlen(s));
 }

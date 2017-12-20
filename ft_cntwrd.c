@@ -1,22 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl.c                                       :+:      :+:    :+:   */
+/*   ft_cntwrd.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: snikitin <snikitin@student.unit.ua>        +#+  +:+       +#+        */
+/*   By: snikitin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/10/29 19:36:05 by snikitin          #+#    #+#             */
-/*   Updated: 2017/12/20 17:42:41 by snikitin         ###   ########.fr       */
+/*   Created: 2017/12/20 13:47:43 by snikitin          #+#    #+#             */
+/*   Updated: 2017/12/20 14:04:37 by snikitin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putendl(char const *s)
+size_t	ft_cntwrd(char *str)
 {
-	if (s)
+	size_t	n;
+	char	inword;
+
+	if (!str)
+		return (0);
+	n = 0;
+	inword = 0;
+	while (*str)
 	{
-		write(1, s, ft_strlen(s));
-		write(1, "\n", 1);
+		if (!ft_iswhsp(*str) && !inword)
+		{
+			inword = 1;
+			n++;
+		}
+		if (inword && ft_iswhsp(*(str + 1)))
+			inword = 0;
+		str++;
 	}
+	return (n);
 }

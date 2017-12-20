@@ -93,4 +93,9 @@ void				ft_list_push_back(t_list **begin_list, void const *content,
 t_list				*ft_list_last(t_list *begin_list);
 t_list				*ft_list_at(t_list *begin_list, size_t nbr);
 
+size_t				ft_cntwrd(char *str);
+size_t				ft_cntchr(char *str, char k);
+int					ft_iswhsp(int c);
+char				*ft_strjoin_free(char const *s1, char const *s2);
+
 #endif

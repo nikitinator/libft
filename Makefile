@@ -35,7 +35,9 @@ SRCS = $(SRC_DIR)/ft_memset.c $(SRC_DIR)/ft_bzero.c $(SRC_DIR)/ft_memcpy.c \
 	   $(SRC_DIR)/ft_lstmap.c $(SRC_DIR)/ft_list_push_back.c\
 	   $(SRC_DIR)/ft_list_push_front.c $(SRC_DIR)/ft_list_at.c\
 	   $(SRC_DIR)/ft_list_find.c $(SRC_DIR)/ft_list_last.c\
-	   $(SRC_DIR)/get_next_line.c
+	   $(SRC_DIR)/get_next_line.c\
+	   $(SRC_DIR)/ft_cntwrd.c $(SRC_DIR)/ft_cntchr.c $(SRC_DIR)/ft_iswhsp.c\
+	   $(SRC_DIR)/ft_strjoin_free.c 
 
 OBJ = ft_memset.o ft_bzero.o ft_memcpy.o ft_memccpy.o ft_memmove.o ft_memchr.o \
 	  ft_memcmp.o ft_isalpha.o ft_isdigit.o ft_isalnum.o\
@@ -50,7 +52,7 @@ OBJ = ft_memset.o ft_bzero.o ft_memcpy.o ft_memccpy.o ft_memmove.o ft_memchr.o \
 	  ft_strsplit.o ft_itoa.o ft_lstnew.o ft_lstdelone.o ft_lstdel.o\
 	  ft_lstadd.o ft_lstiter.o ft_lstmap.o ft_list_push_back.o\
 	  ft_list_push_front.o ft_list_at.o ft_list_find.o ft_list_last.o\
-	  get_next_line.o
+	  get_next_line.o ft_cntwrd.o ft_cntchr.o ft_iswhsp.o ft_strjoin_free.o
 
 CC = gcc
 
@@ -264,3 +266,16 @@ ft_list_last.o : $(SRC_DIR)/ft_list_last.c
 	
 get_next_line.o : $(SRC_DIR)/get_next_line.c get_next_line.h
 	$(CC) $(CFLAGS) -c -o get_next_line.o $(SRC_DIR)/get_next_line.c
+
+ft_cntwrd.o : $(SRC_DIR)/ft_cntwrd.c
+	$(CC) $(CFLAGS) -c -o ft_cntwrd.o $(SRC_DIR)/ft_cntwrd.c
+
+ft_cntchr.o : $(SRC_DIR)/ft_cntchr.c
+	$(CC) $(CFLAGS) -c -o ft_cntchr.o $(SRC_DIR)/ft_cntchr.c
+
+ft_iswhsp.o : $(SRC_DIR)/ft_iswhsp.c
+	$(CC) $(CFLAGS) -c -o ft_iswhsp.o $(SRC_DIR)/ft_iswhsp.c
+
+ft_strjoin_free.o : $(SRC_DIR)/ft_strjoin_free.c
+	$(CC) $(CFLAGS) -c -o ft_strjoin_free.o $(SRC_DIR)/ft_strjoin_free.c
+

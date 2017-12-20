@@ -1,22 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl.c                                       :+:      :+:    :+:   */
+/*   ft_cntchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: snikitin <snikitin@student.unit.ua>        +#+  +:+       +#+        */
+/*   By: snikitin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/10/29 19:36:05 by snikitin          #+#    #+#             */
-/*   Updated: 2017/12/20 17:42:41 by snikitin         ###   ########.fr       */
+/*   Created: 2017/12/20 17:29:17 by snikitin          #+#    #+#             */
+/*   Updated: 2017/12/20 17:30:45 by snikitin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putendl(char const *s)
+/*
+**	ft_cntchr_count counts the number of occurences of char k in string str
+*/
+
+size_t	ft_cntchr(char *str, char k)
 {
-	if (s)
-	{
-		write(1, s, ft_strlen(s));
-		write(1, "\n", 1);
-	}
+	size_t	n;
+
+	if (!str)
+		return (0);
+	n = 0;
+	while (*str)
+		if (*str++ == k)
+			n++;
+	return (n);
 }

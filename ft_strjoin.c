@@ -19,7 +19,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	if (s1 == NULL || s2 == NULL)
 		return (NULL);
-	if (!(strconcat = malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1))))
+	if (!(strconcat = malloc((ft_strlen(s1) + ft_strlen(s2) + 1))))
 		return (NULL);
 	retstrconcat = strconcat;
 	while (*s1)

@@ -6,16 +6,11 @@
 /*   By: snikitin <snikitin@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/30 13:47:46 by snikitin          #+#    #+#             */
-/*   Updated: 2017/11/05 16:31:54 by snikitin         ###   ########.fr       */
+/*   Updated: 2017/12/20 17:44:32 by snikitin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-static int		ft_iswhsp(char const s)
-{
-	return (s == ' ' || s == '\n' || s == '\t');
-}
 
 char			*ft_strtrim(char const *s)
 {

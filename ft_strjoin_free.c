@@ -1,22 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl.c                                       :+:      :+:    :+:   */
+/*   ft_strjoin_free.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: snikitin <snikitin@student.unit.ua>        +#+  +:+       +#+        */
+/*   By: snikitin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/10/29 19:36:05 by snikitin          #+#    #+#             */
-/*   Updated: 2017/12/20 17:42:41 by snikitin         ###   ########.fr       */
+/*   Created: 2017/12/18 13:59:29 by snikitin          #+#    #+#             */
+/*   Updated: 2017/12/20 17:32:45 by snikitin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putendl(char const *s)
+char	*ft_strjoin_free(char const *s1, char const *s2)
 {
-	if (s)
-	{
-		write(1, s, ft_strlen(s));
-		write(1, "\n", 1);
-	}
+	char		*result;
+
+	if (!(result = ft_strjoin(s1, s2)))
+		return (NULL);
+	free((void *)s1);
+	free((void *)s2);
+	return (result);
 }
