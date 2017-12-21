@@ -6,7 +6,7 @@
 /*   By: snikitin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/26 11:59:35 by snikitin          #+#    #+#             */
-/*   Updated: 2017/12/18 13:56:55 by snikitin         ###   ########.fr       */
+/*   Updated: 2017/12/21 18:38:52 by snikitin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,5 +97,6 @@ size_t				ft_cntwrd(char *str);
 size_t				ft_cntchr(char *str, char k);
 int					ft_iswhsp(int c);
 char				*ft_strjoin_free(char const *s1, char const *s2);
+int					ft_atoi_base(char *str, int base);
 
 #endif
