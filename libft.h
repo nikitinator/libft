@@ -6,7 +6,7 @@
 /*   By: snikitin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/26 11:59:35 by snikitin          #+#    #+#             */
-/*   Updated: 2018/01/09 18:57:29 by snikitin         ###   ########.fr       */
+/*   Updated: 2018/01/17 12:31:29 by snikitin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 # include "get_next_line.h"
 
 # define ABS(x) (((x)<0)?-(x):(x))
+# define SEQ(...) (__VA_ARGS__)
 
 typedef struct		s_list
 {
