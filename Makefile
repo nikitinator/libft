@@ -6,7 +6,7 @@
 #    By: snikitin <snikitin@student.unit.ua>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/10/29 20:52:13 by snikitin          #+#    #+#              #
-#    Updated: 2017/12/26 12:14:39 by snikitin         ###   ########.fr        #
+#    Updated: 2018/01/17 18:08:08 by snikitin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -58,7 +58,7 @@ OBJ = ft_memset.o ft_bzero.o ft_memcpy.o ft_memccpy.o ft_memmove.o ft_memchr.o \
 
 CC = gcc
 
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -O3
 
 NAME = libft.a
 
