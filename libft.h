@@ -6,7 +6,7 @@
 /*   By: snikitin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/26 11:59:35 by snikitin          #+#    #+#             */
-/*   Updated: 2018/01/17 12:31:29 by snikitin         ###   ########.fr       */
+/*   Updated: 2018/01/24 18:12:48 by snikitin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,5 +102,6 @@ int					ft_iswhsp(int c);
 char				*ft_strjoin_free(char const *s1, char const *s2);
 int					ft_atoi_base(char *str, int base);
 size_t				ft_list_count(t_list *begin_list);
+void				ft_swap_int(int *a, int *b);
 
 #endif
