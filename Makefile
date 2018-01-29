@@ -6,7 +6,7 @@
 #    By: snikitin <snikitin@student.unit.ua>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/10/29 20:52:13 by snikitin          #+#    #+#              #
-#    Updated: 2018/01/24 18:12:33 by snikitin         ###   ########.fr        #
+#    Updated: 2018/01/29 16:19:34 by snikitin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,7 +35,6 @@ SRCS = $(SRC_DIR)/ft_memset.c $(SRC_DIR)/ft_bzero.c $(SRC_DIR)/ft_memcpy.c \
 	   $(SRC_DIR)/ft_lstmap.c $(SRC_DIR)/ft_list_push_back.c\
 	   $(SRC_DIR)/ft_list_push_front.c $(SRC_DIR)/ft_list_at.c\
 	   $(SRC_DIR)/ft_list_find.c $(SRC_DIR)/ft_list_last.c\
-	   $(SRC_DIR)/get_next_line.c\
 	   $(SRC_DIR)/ft_cntwrd.c $(SRC_DIR)/ft_cntchr.c $(SRC_DIR)/ft_iswhsp.c\
 	   $(SRC_DIR)/ft_strjoin_free.c $(SRC_DIR)/ft_atoi_base.c\
 	   $(SRC_DIR)ft_list_count.c $(SRC_DIR)ft_swap_int.c
@@ -53,7 +52,7 @@ OBJ = ft_memset.o ft_bzero.o ft_memcpy.o ft_memccpy.o ft_memmove.o ft_memchr.o \
 	  ft_strsplit.o ft_itoa.o ft_lstnew.o ft_lstdelone.o ft_lstdel.o\
 	  ft_lstadd.o ft_lstiter.o ft_lstmap.o ft_list_push_back.o\
 	  ft_list_push_front.o ft_list_at.o ft_list_find.o ft_list_last.o\
-	  get_next_line.o ft_cntwrd.o ft_cntchr.o ft_iswhsp.o ft_strjoin_free.o\
+	  ft_cntwrd.o ft_cntchr.o ft_iswhsp.o ft_strjoin_free.o\
 	  ft_atoi_base.o ft_list_count.o ft_swap_int.o
 
 CC = gcc
@@ -266,9 +265,6 @@ ft_list_at.o : $(SRC_DIR)/ft_list_at.c
 ft_list_last.o : $(SRC_DIR)/ft_list_last.c
 	$(CC) $(CFLAGS) -c -o ft_list_last.o $(SRC_DIR)/ft_list_last.c
 	
-get_next_line.o : $(SRC_DIR)/get_next_line.c get_next_line.h
-	$(CC) $(CFLAGS) -c -o get_next_line.o $(SRC_DIR)/get_next_line.c
-
 ft_cntwrd.o : $(SRC_DIR)/ft_cntwrd.c
 	$(CC) $(CFLAGS) -c -o ft_cntwrd.o $(SRC_DIR)/ft_cntwrd.c
 

@@ -6,7 +6,7 @@
 /*   By: snikitin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/26 11:59:35 by snikitin          #+#    #+#             */
-/*   Updated: 2018/01/24 18:12:48 by snikitin         ###   ########.fr       */
+/*   Updated: 2018/01/29 16:19:04 by snikitin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <string.h>
-# include "get_next_line.h"
 
 # define ABS(x) (((x)<0)?-(x):(x))
 # define SEQ(...) (__VA_ARGS__)
