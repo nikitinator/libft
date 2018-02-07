@@ -6,7 +6,7 @@
 #    By: snikitin <snikitin@student.unit.ua>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/10/29 20:52:13 by snikitin          #+#    #+#              #
-#    Updated: 2018/01/29 16:19:34 by snikitin         ###   ########.fr        #
+#    Updated: 2018/02/07 20:48:31 by snikitin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,7 +37,8 @@ SRCS = $(SRC_DIR)/ft_memset.c $(SRC_DIR)/ft_bzero.c $(SRC_DIR)/ft_memcpy.c \
 	   $(SRC_DIR)/ft_list_find.c $(SRC_DIR)/ft_list_last.c\
 	   $(SRC_DIR)/ft_cntwrd.c $(SRC_DIR)/ft_cntchr.c $(SRC_DIR)/ft_iswhsp.c\
 	   $(SRC_DIR)/ft_strjoin_free.c $(SRC_DIR)/ft_atoi_base.c\
-	   $(SRC_DIR)ft_list_count.c $(SRC_DIR)ft_swap_int.c
+	   $(SRC_DIR)/ft_list_count.c $(SRC_DIR)/ft_swap_int.c\
+	   $(SRC_DIT)/get_next_line.c
 
 OBJ = ft_memset.o ft_bzero.o ft_memcpy.o ft_memccpy.o ft_memmove.o ft_memchr.o \
 	  ft_memcmp.o ft_isalpha.o ft_isdigit.o ft_isalnum.o\
@@ -53,7 +54,8 @@ OBJ = ft_memset.o ft_bzero.o ft_memcpy.o ft_memccpy.o ft_memmove.o ft_memchr.o \
 	  ft_lstadd.o ft_lstiter.o ft_lstmap.o ft_list_push_back.o\
 	  ft_list_push_front.o ft_list_at.o ft_list_find.o ft_list_last.o\
 	  ft_cntwrd.o ft_cntchr.o ft_iswhsp.o ft_strjoin_free.o\
-	  ft_atoi_base.o ft_list_count.o ft_swap_int.o
+	  ft_atoi_base.o ft_list_count.o ft_swap_int.o\
+	  get_next_line.c
 
 CC = gcc
 
@@ -285,3 +287,6 @@ ft_list_count.o : $(SRC_DIR)/ft_list_count.c
 
 ft_swap_int.o : $(SRC_DIR)/ft_swap_int.c
 	$(CC) $(CFLAGS) -c -o ft_swap_int.o $(SRC_DIR)/ft_swap_int.c
+
+get_next_line.o : $(SRC_DIR)/get_next_line.c
+	$(CC) $(CFLAGS) -c -o get_next_line.o $(SRC_DIR)/get_next_line.c
