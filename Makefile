@@ -6,7 +6,7 @@
 #    By: snikitin <snikitin@student.unit.ua>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/10/29 20:52:13 by snikitin          #+#    #+#              #
-#    Updated: 2018/02/07 20:48:31 by snikitin         ###   ########.fr        #
+#    Updated: 2018/04/03 17:47:46 by snikitin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -55,7 +55,7 @@ OBJ = ft_memset.o ft_bzero.o ft_memcpy.o ft_memccpy.o ft_memmove.o ft_memchr.o \
 	  ft_list_push_front.o ft_list_at.o ft_list_find.o ft_list_last.o\
 	  ft_cntwrd.o ft_cntchr.o ft_iswhsp.o ft_strjoin_free.o\
 	  ft_atoi_base.o ft_list_count.o ft_swap_int.o\
-	  get_next_line.c
+	  get_next_line.o
 
 CC = gcc
 
