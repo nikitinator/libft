@@ -38,7 +38,7 @@ SRCS = $(SRC_DIR)/ft_memset.c $(SRC_DIR)/ft_bzero.c $(SRC_DIR)/ft_memcpy.c \
 	   $(SRC_DIR)/ft_cntwrd.c $(SRC_DIR)/ft_cntchr.c $(SRC_DIR)/ft_iswhsp.c\
 	   $(SRC_DIR)/ft_strjoin_free.c $(SRC_DIR)/ft_atoi_base.c\
 	   $(SRC_DIR)/ft_list_count.c $(SRC_DIR)/ft_swap_int.c\
-	   $(SRC_DIT)/get_next_line.c
+	   $(SRC_DIT)/get_next_line.c $(SRC_DIT)/ft_free_words.c
 
 OBJ = ft_memset.o ft_bzero.o ft_memcpy.o ft_memccpy.o ft_memmove.o ft_memchr.o \
 	  ft_memcmp.o ft_isalpha.o ft_isdigit.o ft_isalnum.o\
@@ -57,7 +57,7 @@ OBJ = ft_memset.o ft_bzero.o ft_memcpy.o ft_memccpy.o ft_memmove.o ft_memchr.o \
 	  ft_atoi_base.o ft_list_count.o ft_swap_int.o\
 	  get_next_line.o
 
-CC = gcc
+CC = clang
 
 CFLAGS = -Wall -Wextra -Werror -O3
 
@@ -287,6 +287,9 @@ ft_list_count.o : $(SRC_DIR)/ft_list_count.c
 
 ft_swap_int.o : $(SRC_DIR)/ft_swap_int.c
 	$(CC) $(CFLAGS) -c -o ft_swap_int.o $(SRC_DIR)/ft_swap_int.c
+
+ft_free_words.o : $(SRC_DIR)/ft_free_words.c
+	$(CC) $(CFLAGS) -c -o ft_free_words.o $(SRC_DIR)/ft_free_words.c
 
 get_next_line.o : $(SRC_DIR)/get_next_line.c
 	$(CC) $(CFLAGS) -c -o get_next_line.o $(SRC_DIR)/get_next_line.c
