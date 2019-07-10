@@ -38,7 +38,7 @@ SRCS = $(SRC_DIR)/ft_memset.c $(SRC_DIR)/ft_bzero.c $(SRC_DIR)/ft_memcpy.c \
 	   $(SRC_DIR)/ft_cntwrd.c $(SRC_DIR)/ft_cntchr.c $(SRC_DIR)/ft_iswhsp.c\
 	   $(SRC_DIR)/ft_strjoin_free.c $(SRC_DIR)/ft_atoi_base.c\
 	   $(SRC_DIR)/ft_list_count.c $(SRC_DIR)/ft_swap_int.c\
-	   $(SRC_DIT)/get_next_line.c $(SRC_DIT)/ft_free_words.c
+	   $(SRC_DIR)/get_next_line.c $(SRC_DIR)/ft_free_words.c
 
 OBJ = ft_memset.o ft_bzero.o ft_memcpy.o ft_memccpy.o ft_memmove.o ft_memchr.o \
 	  ft_memcmp.o ft_isalpha.o ft_isdigit.o ft_isalnum.o\
@@ -55,7 +55,7 @@ OBJ = ft_memset.o ft_bzero.o ft_memcpy.o ft_memccpy.o ft_memmove.o ft_memchr.o \
 	  ft_list_push_front.o ft_list_at.o ft_list_find.o ft_list_last.o\
 	  ft_cntwrd.o ft_cntchr.o ft_iswhsp.o ft_strjoin_free.o\
 	  ft_atoi_base.o ft_list_count.o ft_swap_int.o\
-	  get_next_line.o
+	  get_next_line.o ft_free_words.o
 
 CC = clang
 
