@@ -1,7 +1,7 @@
 #include "libft.h"
 #include <stdlib.h>
 
-void                ft_free_words(char **words)
+void                ft_words_destroy(char **words)
 {
     size_t  i;
 

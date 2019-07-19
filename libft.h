@@ -103,6 +103,7 @@ char				*ft_strjoin_free(char const *s1, char const *s2);
 int					ft_atoi_base(char *str, int base);
 size_t				ft_list_count(t_list *begin_list);
 void				ft_swap_int(int *a, int *b);
-void                ft_free_words(char **words);
+
+void                ft_words_destroy(char **words);
 
 #endif
