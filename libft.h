@@ -104,6 +104,7 @@ int					ft_atoi_base(char *str, int base);
 size_t				ft_list_count(t_list *begin_list);
 void				ft_swap_int(int *a, int *b);
 
+char                **ft_wordsdup(char **words);
 size_t              ft_wordslen(char **words);
 void                ft_words_destroy(char **words);
 
