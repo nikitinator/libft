@@ -38,7 +38,8 @@ SRC = ft_memset.c ft_bzero.c ft_memcpy.c \
 	   ft_cntwrd.c ft_cntchr.c ft_iswhsp.c\
 	   ft_strjoin_free.c ft_atoi_base.c\
 	   ft_list_count.c ft_swap_int.c\
-	   get_next_line.c ft_words_destroy.c
+	   get_next_line.c \
+		ft_words_destroy.c ft_wordslen.c
 
 OBJ = $(SRC:.c=.o)
 
