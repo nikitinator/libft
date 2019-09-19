@@ -6,11 +6,9 @@
 #    By: snikitin <snikitin@student.unit.ua>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/10/29 20:52:13 by snikitin          #+#    #+#              #
-#    Updated: 2018/04/03 17:47:46 by snikitin         ###   ########.fr        #
+#    Updated: 2019/09/19 11:41:15 by snikitin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
-
-SRC_DIR = .
 
 SRC = ft_memset.c ft_bzero.c ft_memcpy.c \
 	   ft_isalpha.c ft_isdigit.c ft_isalnum.c \
